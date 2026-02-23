@@ -150,17 +150,17 @@ header i {
 main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .project-cards-container {
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(100px, 500px)); */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .project-card {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  max-width: 90vw;
 }
 
 .project-info-container {
