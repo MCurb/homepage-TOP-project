@@ -114,10 +114,27 @@ header {
 }
 
 .header-img-container {
+  position: relative;
   max-width: 90vw;
   box-shadow:
     rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.profile-name {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  color: hsl(0, 0%, 98%);
+  font-family: 'Playfair Display';
+  line-height: 1.15;
+  font-weight: 500;
+  text-shadow:
+    0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .header-img-container img {
