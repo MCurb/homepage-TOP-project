@@ -161,12 +161,17 @@ main h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-content: center;
-  gap: 40px;
+  gap: 52px;
 }
 
 .project-card {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   min-height: 450px;
+  border-radius: 20px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
 }
 
 .project-img-container {
@@ -179,16 +184,8 @@ main h2 {
   object-fit: cover;
 }
 
-/* I'm trying to make all cards the same height.
-They are equal height when they are in the same row,
-but not when they wrap. */
-/* I'm also trying to make all images inside the cards
-equal height */
-/* If I make the cards fixed height, it has problems with
-auto-fit */
-
 .project-info-container {
-  height: 180px;
+  height: 200px;
   gap: 8px;
   padding: 16px;
 }
@@ -205,5 +202,5 @@ auto-fit */
 }
 
 .project-links, .new-tab-icon {
-  font-size: 20px;
+  font-size: 24px;
 }
