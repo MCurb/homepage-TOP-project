@@ -201,6 +201,12 @@ main h2 {
   gap: 16px;
 }
 
+.project-links a {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-links, .new-tab-icon {
   font-size: 24px;
 }
