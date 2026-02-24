@@ -136,6 +136,7 @@ header {
 
 .social-links {
   display: flex;
+  color: black;
   gap: 12px;
 }
 
@@ -175,7 +176,7 @@ main h2 {
 }
 
 .project-img-container {
- flex: 1;
+  flex: 1;
 }
 
 .project-img-container img {
@@ -185,7 +186,7 @@ main h2 {
 }
 
 .project-info-container {
-  height: 200px;
+  height: 240px;
   gap: 8px;
   padding: 16px;
 }
@@ -207,6 +208,43 @@ main h2 {
   color: inherit;
 }
 
-.project-links, .new-tab-icon {
+.project-links,
+.new-tab-icon {
   font-size: 24px;
+}
+
+/* ==== Contact ==== */
+
+.contact {
+  gap: 20px;
+  padding: 24px;
+  padding-bottom: 60px;
+  background-color: hsl(192, 91%, 36%);
+}
+
+p.bigger-font {
+  font-size: 20px;
+}
+
+.contact p {
+  color: white;
+}
+
+.phone-number-cont,
+.email-cont {
+  display: flex;
+  gap: 8px;
+  color: white;
+}
+
+.contact h4 {
+  align-self: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.contact .social-links {
+  align-self: center;
+  font-size: 32px;
+  gap: 24px;
 }
