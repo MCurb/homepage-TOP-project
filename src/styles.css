@@ -361,6 +361,7 @@ p.bigger-font {
 }
 
 @media (min-width: 1024px) {
+  /* ==== Header ==== */
 
   header .social-links {
     display: flex;
@@ -371,17 +372,17 @@ p.bigger-font {
     align-self: flex-start;
   }
 
-  .info-cont {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
   .about-section {
     height: 300px;
     padding: 20px;
     min-width: 90ch;
     width: 50vw;
+  }
+
+  .info-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .header-img-container {
@@ -393,5 +394,11 @@ p.bigger-font {
     border-radius: 16px;
     aspect-ratio: 4 / 5;
     object-fit: cover;
+  }
+
+  .profile-name {
+    transform: translate(-50%);
+    top: auto;
+    width: auto;
   }
 }
