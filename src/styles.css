@@ -171,7 +171,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 20px;
+  padding: 100px 20px 200px 20px;
   gap: 20px;
 }
 
@@ -184,6 +184,7 @@ main h2 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   place-content: center;
   gap: 52px;
+  width: 100%;
 }
 
 .project-card {
@@ -344,6 +345,7 @@ p.bigger-font {
   footer {
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     padding: 40px;
   }
 
@@ -400,5 +402,15 @@ p.bigger-font {
     transform: translate(-50%);
     top: auto;
     width: auto;
+  }
+
+  /* ==== Footer ==== */
+
+  .contact-img-container {
+    width: 40%;
+  }
+
+  .contact-img-container img {
+    aspect-ratio: 3 / 2;
   }
 }
