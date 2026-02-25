@@ -290,7 +290,7 @@ p.bigger-font {
 
   .profile-name {
     transform: translate(15%);
-    top: 4px;
+    top: 0px;
     width: max-content;
     font-size: clamp(2.5rem, 7vw, 3.75rem);
   }
@@ -313,5 +313,11 @@ p.bigger-font {
   .about-section h1 {
     width: 100%;
     text-align: center;
+  }
+
+  /* ==== Main ==== */
+
+  main {
+    padding: 100px 40px;
   }
 }
