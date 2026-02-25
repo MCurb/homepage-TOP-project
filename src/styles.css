@@ -105,10 +105,10 @@ p {
 /* ==== Header ==== */
 
 header {
-  /* display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px; */
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  /* gap: 20px; */
   /* padding: 12px; */
   background: url(images/19861.jpg) center/cover no-repeat;
 }
@@ -144,11 +144,17 @@ header {
 }
 
 .about-section {
-  display: grid;
-  /* grid-template-rows: repeat(3, max-content); */
-  place-items: center;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
   padding: 20px;
+}
+
+.info-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 .social-links {
@@ -156,6 +162,7 @@ header {
   color: black;
   gap: 12px;
   font-size: 24px;
+  /* padding: 8px; */
 }
 
 /* ==== Main Projects ==== */
@@ -282,12 +289,6 @@ p.bigger-font {
     display: none;
   }
 
-  header {
-    display: flex;
-    justify-content: center;
-    /* padding: 20px; */
-  }
-
   .header-img-container {
     width: 300px;
     margin-left: -60px;
@@ -319,8 +320,12 @@ p.bigger-font {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
+  .info-cont {
+    display: block;
+  }
+
   .about-section h1 {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
   }
 
@@ -330,7 +335,7 @@ p.bigger-font {
     padding: 100px 40px 200px 40px;
   }
 
-  main h2 { 
+  main h2 {
     align-self: flex-start;
   }
 
@@ -342,7 +347,8 @@ p.bigger-font {
     padding: 40px;
   }
 
-  .contact .social-links, .contact h4 {
+  .contact .social-links,
+  .contact h4 {
     align-self: start;
   }
 
@@ -351,5 +357,41 @@ p.bigger-font {
     align-self: stretch;
     width: 75%;
     /* padding: 40px; */
+  }
+}
+
+@media (min-width: 1024px) {
+
+  header .social-links {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .info-cont h1 {
+    align-self: flex-start;
+  }
+
+  .info-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .about-section {
+    height: 300px;
+    padding: 20px;
+    min-width: 90ch;
+    width: 50vw;
+  }
+
+  .header-img-container {
+    height: 380px;
+    margin-top: -60px;
+  }
+
+  .header-img-container img {
+    border-radius: 16px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
   }
 }
