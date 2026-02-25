@@ -327,7 +327,7 @@ p.bigger-font {
   /* ==== Main ==== */
 
   main {
-    padding: 100px 40px;
+    padding: 100px 40px 200px 40px;
   }
 
   main h2 { 
