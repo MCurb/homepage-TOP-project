@@ -229,11 +229,16 @@ main h2 {
 
 /* ==== Contact ==== */
 
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(192, 91%, 36%);
+}
+
 .contact {
   gap: 20px;
   padding: 24px;
   padding-bottom: 60px;
-  background-color: hsl(192, 91%, 36%);
 }
 
 p.bigger-font {
@@ -263,10 +268,14 @@ p.bigger-font {
   gap: 24px;
 }
 
+.contact-img-container img {
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
 /* ==== Tablets ==== */
 
 @media (min-width: 590px) {
-
   /* ==== Header ==== */
 
   header .social-links {
@@ -319,5 +328,28 @@ p.bigger-font {
 
   main {
     padding: 100px 40px;
+  }
+
+  main h2 { 
+    align-self: flex-start;
+  }
+
+  /* ==== Contact ==== */
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .contact .social-links, .contact h4 {
+    align-self: start;
+  }
+
+  .contact-img-container {
+    display: flex;
+    align-self: stretch;
+    width: 75%;
+    /* padding: 40px; */
   }
 }
