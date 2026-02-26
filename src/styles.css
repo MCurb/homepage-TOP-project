@@ -140,7 +140,7 @@ header {
 .header-img-container img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 .about-section {
@@ -277,7 +277,7 @@ p.bigger-font {
 }
 
 .contact-img-container img {
-  aspect-ratio: 4/5;
+  aspect-ratio: 2/3;
   object-fit: cover;
 }
 
@@ -389,13 +389,15 @@ p.bigger-font {
 
   .header-img-container {
     height: 380px;
+    width: auto;
     margin-top: -60px;
+    margin-left: -140px;
   }
 
   .header-img-container img {
-    border-radius: 16px;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
+    /* border-radius: 16px; */
+    /* aspect-ratio: 4 / 5; */
+    /* object-fit: cover; */
   }
 
   .profile-name {
@@ -411,6 +413,7 @@ p.bigger-font {
   }
 
   .contact-img-container img {
-    aspect-ratio: 3 / 2;
+    /* aspect-ratio: 3 / 2; */
+    aspect-ratio: auto;
   }
 }
