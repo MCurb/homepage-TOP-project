@@ -107,6 +107,7 @@ p {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   /* flex-direction: column; */
   /* gap: 20px; */
   /* padding: 12px; */
@@ -140,12 +141,15 @@ header {
 .header-img-container img {
   height: 100%;
   width: 100%;
-  /* object-fit: contain; */
+  aspect-ratio: 2/3;
+  object-fit: cover;
 }
 
 .about-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
   padding: 20px;
 }
@@ -368,7 +372,7 @@ p.bigger-font {
     width: 75%;
     /* padding: 40px; */
   }
-  
+
   .contact-img-container img {
     height: 100%;
   }
@@ -426,6 +430,6 @@ p.bigger-font {
 
   .contact-img-container img {
     /* aspect-ratio: 3 / 2; */
-    aspect-ratio: auto;
+    /* aspect-ratio: auto; */
   }
 }
