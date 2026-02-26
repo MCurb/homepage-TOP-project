@@ -111,7 +111,7 @@ header {
   /* flex-direction: column; */
   /* gap: 20px; */
   /* padding: 12px; */
-  background: url(images/19861.jpg) center/cover no-repeat;
+  background: url(images/header-bg.webp) center/cover no-repeat;
 }
 
 .header-img-container {
