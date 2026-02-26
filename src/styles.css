@@ -86,12 +86,19 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
   font-weight: 500;
 }
 
 p {
-  font-family: 'Roboto';
+  font-family:
+    'Roboto',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
   color: var(--text-color);
 }
 
@@ -129,7 +136,7 @@ header {
   transform: translateX(-50%);
   font-size: 60px;
   color: hsl(0, 0%, 98%);
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
   line-height: 1.15;
   font-weight: 500;
   text-shadow:
@@ -163,10 +170,14 @@ header {
 
 .social-links {
   display: flex;
-  color: black;
+  justify-content: center;
   gap: 12px;
-  font-size: 24px;
-  /* padding: 8px; */
+}
+
+.social-links svg {
+  width: 100%;
+  max-width: 24px;
+  flex-shrink: 0;
 }
 
 /* ==== Main Projects ==== */
@@ -228,6 +239,13 @@ main h2 {
   gap: 16px;
 }
 
+.project-links svg {
+  width: 100%;
+  max-width: 24px;
+  /* height: auto; */
+  /* flex-shrink: 0; */
+}
+
 .project-links a {
   display: flex;
   text-decoration: none;
@@ -276,8 +294,11 @@ p.bigger-font {
 
 .contact .social-links {
   align-self: center;
-  font-size: 32px;
   gap: 24px;
+}
+
+.contact .social-links svg {
+  max-width: 32px;
 }
 
 .contact-img-container img {
@@ -359,9 +380,8 @@ p.bigger-font {
     padding: 0;
   }
 
-  .contact .social-links,
-  .contact h4 {
-    align-self: start;
+  .contact .social-links, .contact h4 {
+    align-self: flex-start;
   }
 
   .contact-img-container {
@@ -382,8 +402,8 @@ p.bigger-font {
   /* ==== Header ==== */
 
   header .social-links {
-    display: flex;
     align-self: flex-end;
+    display: flex;
   }
 
   .info-cont h1 {
