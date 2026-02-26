@@ -357,6 +357,7 @@ p.bigger-font {
   .contact-img-container {
     display: flex;
     align-self: stretch;
+    justify-content: center;
     width: 75%;
     /* padding: 40px; */
   }
