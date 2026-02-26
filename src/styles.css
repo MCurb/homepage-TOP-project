@@ -430,6 +430,6 @@ p.bigger-font {
 
   .contact-img-container img {
     /* aspect-ratio: 3 / 2; */
-    /* aspect-ratio: auto; */
+    aspect-ratio: auto;
   }
 }
