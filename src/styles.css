@@ -346,7 +346,13 @@ p.bigger-font {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    gap: 20px;
     padding: 40px;
+    padding-bottom: 60px;
+  }
+
+  .contact {
+    padding: 0;
   }
 
   .contact .social-links,
@@ -355,11 +361,16 @@ p.bigger-font {
   }
 
   .contact-img-container {
-    display: flex;
     align-self: stretch;
+    display: flex;
     justify-content: center;
+    /* align-items: center; */
     width: 75%;
     /* padding: 40px; */
+  }
+  
+  .contact-img-container img {
+    height: 100%;
   }
 }
 
