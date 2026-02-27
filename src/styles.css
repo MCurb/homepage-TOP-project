@@ -102,6 +102,12 @@ p {
   color: var(--text-color);
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Helper Classes */
 
 .flex {
@@ -201,7 +207,6 @@ main h2 {
   place-content: center;
   gap: 52px;
   width: 100%;
-  padding: 0;
 }
 
 .project-card {
