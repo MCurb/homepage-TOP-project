@@ -200,6 +200,7 @@ main h2 {
   place-content: center;
   gap: 52px;
   width: 100%;
+  padding: 0;
 }
 
 .project-card {
