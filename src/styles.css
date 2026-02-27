@@ -286,7 +286,7 @@ p.bigger-font {
   color: white;
 }
 
-.contact h4 {
+.contact h2 {
   align-self: center;
   font-size: 2rem;
   color: white;
@@ -380,7 +380,7 @@ p.bigger-font {
     padding: 0;
   }
 
-  .contact .social-links, .contact h4 {
+  .contact .social-links, .contact h2 {
     align-self: flex-start;
   }
 
