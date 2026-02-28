@@ -320,6 +320,10 @@ p.bigger-font {
 @media (min-width: 590px) {
   /* ==== Header ==== */
 
+  header {
+    padding: 100px 0px;
+  }
+
   header .social-links {
     display: none;
   }
@@ -349,7 +353,7 @@ p.bigger-font {
   .about-section {
     display: block;
     width: clamp(42ch, 75vw, 80ch);
-    margin-top: 10vh;
+    /* margin-top: 15%; */
     padding: 60px 20px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
