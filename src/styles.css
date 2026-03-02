@@ -544,8 +544,23 @@ p.bigger-font {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  a:focus svg,
-  a:hover svg {
-    transform: none;
-  }
+
+ svg {
+  transition: none !important;
+  transform: none !important;
+ }
+
+ .header-img-container {
+  animation: none !important;
+ }
+
+ .project-card {
+  animation: none !important;
+  opacity: 1;
+ }
+
+ .contact > * {
+  animation: none !important;
+  transform: none !important;
+ }
 }
