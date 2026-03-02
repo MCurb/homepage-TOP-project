@@ -263,6 +263,7 @@ main h2 {
 
 .project-img-container {
   /* flex: 1; */
+  overflow: hidden;
 }
 
 .project-img-container img {
@@ -532,35 +533,48 @@ p.bigger-font {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .project-card img,
   svg {
     will-change: transform;
+    transition: transform 0.4s ease;
+    transform-origin: 50% 50%;
+  }
+
+  svg {
     transition: transform ease 0.3s;
+  }
+
+  a:focus svg {
+    transition: transform ease 0.15s;
   }
 
   a:focus svg,
   a:hover svg {
     transform: scale(1.15);
   }
+
+  .project-img-container:hover img {
+    transform: scale(1.04);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  svg {
+    transition: none !important;
+    transform: none !important;
+  }
 
- svg {
-  transition: none !important;
-  transform: none !important;
- }
+  .header-img-container {
+    animation: none !important;
+  }
 
- .header-img-container {
-  animation: none !important;
- }
+  .project-card {
+    animation: none !important;
+    opacity: 1;
+  }
 
- .project-card {
-  animation: none !important;
-  opacity: 1;
- }
-
- .contact > * {
-  animation: none !important;
-  transform: none !important;
- }
+  .contact > * {
+    animation: none !important;
+    transform: none !important;
+  }
 }
