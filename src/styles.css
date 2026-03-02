@@ -166,7 +166,7 @@ header {
   box-shadow:
     rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    animation: enter-up 1s ease backwards;
+  animation: enter-up 1s ease backwards;
 }
 
 .profile-name {
@@ -316,6 +316,10 @@ footer {
   padding: clamp(24px, 1.5rem, 32px);
   padding-bottom: 3.75rem;
   word-break: break-word;
+}
+
+.contact > * {
+  transform: translateX(-110vw);
 }
 
 p.bigger-font {
