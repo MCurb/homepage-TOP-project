@@ -203,7 +203,10 @@ main h2 {
 
 .project-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(clamp(300px, 15rem, 440px), 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(clamp(300px, 15rem, 440px), 1fr)
+  );
   place-content: center;
   gap: 52px;
   width: 100%;
@@ -293,7 +296,8 @@ p.bigger-font {
   color: white;
 }
 
-.phone-number-cont svg, .email-cont svg {
+.phone-number-cont svg,
+.email-cont svg {
   flex-shrink: 0;
   width: 100%;
   max-width: 1em;
@@ -480,5 +484,24 @@ p.bigger-font {
   .contact-img-container img {
     /* aspect-ratio: 3 / 2; */
     aspect-ratio: auto;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  svg {
+    will-change: transform;
+    transition: transform ease 0.3s;
+  }
+
+  a:focus svg,
+  a:hover svg {
+    transform: scale(1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a:focus svg,
+  a:hover svg {
+    transform: none;
   }
 }
