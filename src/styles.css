@@ -153,9 +153,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
-  /* gap: 20px; */
-  /* padding: 12px; */
   background: url(images/header-bg.webp) center/cover no-repeat;
   padding-bottom: 40px;
 }
@@ -249,7 +246,6 @@ main h2 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   min-height: 450px;
   border-radius: 20px;
-  /* transition: all 1s ease-out; */
   opacity: 0;
 }
 
@@ -262,7 +258,6 @@ main h2 {
 }
 
 .project-img-container {
-  /* flex: 1; */
   overflow: hidden;
 }
 
@@ -294,8 +289,6 @@ main h2 {
 .project-links svg {
   width: 100%;
   max-width: 1.5rem;
-  /* height: auto; */
-  /* flex-shrink: 0; */
 }
 
 .project-links a {
@@ -406,7 +399,6 @@ p.bigger-font {
   .about-section {
     display: block;
     width: clamp(30ch, 75vw, 80ch);
-    /* margin-top: 15%; */
     padding: 60px 1.25rem;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -417,7 +409,6 @@ p.bigger-font {
   }
 
   .about-section h1 {
-    /* width: 100%; */
     text-align: center;
   }
 
@@ -455,9 +446,7 @@ p.bigger-font {
     align-self: stretch;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     width: 75%;
-    /* padding: 40px; */
   }
 
   .contact-img-container img {
@@ -481,10 +470,7 @@ p.bigger-font {
     display: flex;
     flex-direction: row;
     gap: 0;
-    /* align-items: stretch; */
-    /* min-height: 300px; */
     padding: 1.25rem;
-    /* min-width: 90ch; */
     width: clamp(42ch, 75vw, 130ch);
   }
 
@@ -498,19 +484,9 @@ p.bigger-font {
     flex-shrink: 0;
     display: flex;
     width: auto;
-    /* height: 100%; */
-    /* width: 100%; */
     margin-top: -3.75rem;
     margin-bottom: -3.75rem;
     margin-left: -3.75rem;
-  }
-
-  .header-img-container img {
-    /* border-radius: 16px; */
-    /* aspect-ratio: 1 / 1; */
-    /* width: 100%; */
-    /* height: 100%; */
-    /* object-fit: cover; */
   }
 
   .profile-name {
@@ -527,7 +503,6 @@ p.bigger-font {
   }
 
   .contact-img-container img {
-    /* aspect-ratio: 3 / 2; */
     aspect-ratio: auto;
   }
 }
