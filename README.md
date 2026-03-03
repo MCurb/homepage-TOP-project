@@ -1,4 +1,4 @@
-# 🌐 Homepage Project
+# 💼 Homepage Project
 
 A responsive and accessible **personal homepage** built with HTML and CSS, with a small amount of JavaScript for interactivity.
 The main goal of this project was to **practice accessibility, responsive design, and modern CSS layout techniques**, while keeping the code clean and semantic.
