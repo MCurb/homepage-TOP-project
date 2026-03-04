@@ -1,8 +1,12 @@
+import './styles/reset.css';
+import './styles/header.css';
+import './styles/main.css';
+import './styles/footer.css';
 import './styles.css';
 
-const items = document.querySelectorAll('.project-card');
+// On Scroll Animations
 
-export const observer = new IntersectionObserver(
+const mainObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -15,13 +19,14 @@ export const observer = new IntersectionObserver(
   },
 );
 
-items.forEach((item) => observer.observe(item));
+const items = document.querySelectorAll('.project-card');
+items.forEach((item) => mainObserver.observe(item));
 
 const contactObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        setDelay();
+        setDelay(document.querySelectorAll('.contact > *'));
       }
     });
   },
@@ -31,15 +36,12 @@ const contactObserver = new IntersectionObserver(
 );
 
 const contact = document.querySelector('.contact');
-
 contactObserver.observe(contact);
 
-function setDelay() {
-  const contactElements = document.querySelectorAll('.contact > *');
-
+function setDelay(elements) {
   let delay = 0.15;
 
-  contactElements.forEach((element) => {
+  elements.forEach((element) => {
     delay += 0.1;
     element.setAttribute(
       'style',

@@ -1,0 +1,141 @@
+/* ==== Main Projects ==== */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px 200px 20px;
+  gap: 1.5rem;
+}
+
+main h2 {
+  font-size: 2rem;
+}
+
+.project-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+  place-content: center;
+  gap: clamp(40px, 3.75rem, 80px);
+  width: 100%;
+}
+
+.project-card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-height: 450px;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+.project-card.active {
+  animation: scroll-in 1s ease both;
+}
+
+@keyframes scroll-in {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+}
+
+.project-img-container {
+  overflow: hidden;
+}
+
+.project-img-container img {
+  height: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+.project-info-container {
+  min-height: 240px;
+  gap: 0.75rem;
+  padding: clamp(16px, 1rem, 32px);
+}
+
+.name-links-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.project-links {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.project-links svg {
+  width: 100%;
+  max-width: 1.5rem;
+}
+
+.project-links a {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==== Tablets ==== */
+
+@media (min-width: 590px) {
+  main {
+    padding: 100px 40px 200px 40px;
+  }
+
+  main h2 {
+    align-self: flex-start;
+  }
+
+  .project-cards-container {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(clamp(300px, 15rem, 440px), 1fr)
+    );
+  }
+}
+
+/* ==== Desktop ==== */
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    width: 85vw;
+    align-self: center;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project-card img {
+    will-change: transform;
+    transition: transform 0.4s ease;
+    transform-origin: 50% 50%;
+  }
+
+  .project-img-container:hover img {
+    transform: scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+   .project-card {
+    animation: none !important;
+    opacity: 1;
+  }
+}

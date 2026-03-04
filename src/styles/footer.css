@@ -1,0 +1,114 @@
+/* ==== Contact - Footer ==== */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(192, 91%, 36%);
+}
+
+.contact {
+  gap: 1.25rem;
+  padding: clamp(24px, 1.5rem, 32px);
+  padding-bottom: 3.75rem;
+  word-break: break-word;
+}
+
+.contact > * {
+  transform: translateX(-110vw);
+}
+
+p.bigger-font {
+  font-size: 1.25rem;
+}
+
+.contact p {
+  color: white;
+}
+
+.phone-number-cont,
+.email-cont {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.phone-number-cont svg,
+.email-cont svg {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 1em;
+}
+
+.contact h2 {
+  align-self: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.contact .social-links {
+  align-self: center;
+  gap: 1.5rem;
+}
+
+.contact .social-links svg {
+  max-width: 2rem;
+}
+
+.contact-img-container img {
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+
+/* ==== Tablets ==== */
+
+@media (min-width: 590px) {
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: clamp(20px, 1.25rem, 40px);
+    padding: clamp(40px, 2.5rem, 60px);
+    padding-bottom: 60px;
+  }
+
+  .contact {
+    padding: 0;
+  }
+
+  .contact .social-links,
+  .contact h2 {
+    align-self: flex-start;
+  }
+
+  .contact-img-container {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+  }
+
+  .contact-img-container img {
+    height: 100%;
+  }
+}
+
+/* ==== Desktop ==== */
+
+@media (min-width: 1024px) {
+  .contact-img-container {
+    width: 40%;
+  }
+
+  .contact-img-container img {
+    aspect-ratio: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact > * {
+    animation: none !important;
+    transform: none !important;
+  }
+}
