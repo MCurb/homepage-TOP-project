@@ -501,6 +501,18 @@ p.bigger-font {
     font-size: clamp(1.75rem, 4.5vw, 3.75rem);
   }
 
+  /* ==== Main ==== */
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    width: 85vw;
+    align-self: center;
+  }
+
   /* ==== Footer ==== */
 
   .contact-img-container {
