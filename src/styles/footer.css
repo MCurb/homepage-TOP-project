@@ -57,8 +57,16 @@ p.bigger-font {
 }
 
 .contact-img-container img {
-  aspect-ratio: 2/3;
   object-fit: cover;
+}
+
+.contact-img-container picture {
+  aspect-ratio: 2/3;
+}
+
+.contact-img-container img {
+  height: 100%;
+  width: 100%;
 }
 
 /* ==== Tablets ==== */
@@ -84,13 +92,7 @@ p.bigger-font {
 
   .contact-img-container {
     align-self: stretch;
-    display: flex;
-    justify-content: center;
     width: 75%;
-  }
-
-  .contact-img-container img {
-    height: 100%;
   }
 }
 
@@ -101,7 +103,7 @@ p.bigger-font {
     width: 40%;
   }
 
-  .contact-img-container img {
+  .contact-img-container picture {
     aspect-ratio: auto;
   }
 }
