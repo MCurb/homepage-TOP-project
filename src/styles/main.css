@@ -49,11 +49,12 @@ main h2 {
 
 .project-img-container {
   overflow: hidden;
+  aspect-ratio: 4/5;
 }
 
 .project-img-container img {
   height: 100%;
-  aspect-ratio: 4/5;
+  width: 100%;
   object-fit: cover;
 }
 
