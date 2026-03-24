@@ -80,7 +80,7 @@ header {
 
 /* ==== Tablets ==== */
 
-@media (min-width: 590px) {
+@media (min-width: 36.875rem) {
   header {
     padding: 100px 50px;
   }
@@ -131,7 +131,7 @@ header {
 
 /* ==== Desktop ==== */
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   header .social-links {
     align-self: flex-end;
     display: flex;

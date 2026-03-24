@@ -91,7 +91,7 @@ main h2 {
 
 /* ==== Tablets ==== */
 
-@media (min-width: 590px) {
+@media (min-width: 36.875rem) {
   main {
     padding: 100px 40px 200px 40px;
   }
@@ -110,7 +110,7 @@ main h2 {
 
 /* ==== Desktop ==== */
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   body {
     display: flex;
     flex-direction: column;
@@ -135,7 +135,7 @@ main h2 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-   .project-card {
+  .project-card {
     animation: none !important;
     opacity: 1;
   }
