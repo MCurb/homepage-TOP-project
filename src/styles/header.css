@@ -69,7 +69,15 @@ header {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: var(--min-width);
+  min-height: var(--min-height);
 }
 
 .social-links svg {

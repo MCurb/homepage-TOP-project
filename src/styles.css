@@ -57,6 +57,13 @@ p {
   }
 }
 
+@media (pointer: coarse) {
+  :root {
+    --min-width: 44px;
+    --min-height: 44px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   svg {
     transition: none !important;

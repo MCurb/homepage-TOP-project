@@ -85,6 +85,12 @@ main h2 {
 
 .project-links a {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: var(--min-width);
+  min-height: var(--min-height);
+  
   text-decoration: none;
   color: inherit;
 }
@@ -131,6 +137,12 @@ main h2 {
 
   .project-img-container:hover img {
     transform: scale(1.04);
+  }
+}
+
+@media (pointer: coarse) {
+  .project-links {
+    gap: 0.5rem;
   }
 }
 
