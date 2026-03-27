@@ -59,8 +59,8 @@ p {
 
 @media (pointer: coarse) {
   :root {
-    --min-width: 44px;
-    --min-height: 44px;
+    --min-width: 2.75rem;
+    --min-height: 2.75rem;
   }
 }
 
