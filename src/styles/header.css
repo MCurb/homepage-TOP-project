@@ -98,10 +98,10 @@ header {
   }
 
   .header-img-container {
-    width: clamp(300px, 15rem, 400px);
+    width: 18.75rem;
     margin-left: -3.75rem;
     margin-top: -120px;
-    margin-right: clamp(20px, 1.5rem, 32px);
+    margin-right: 1.5rem;
     float: left;
     border-radius: 16px;
     animation: enter-left 1s ease backwards;

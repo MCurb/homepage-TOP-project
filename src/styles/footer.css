@@ -8,7 +8,7 @@ footer {
 
 .contact {
   gap: 1.25rem;
-  padding: clamp(24px, 1.5rem, 32px);
+  padding: 1.5rem;
   padding-bottom: 3.75rem;
   word-break: break-word;
 }
@@ -76,8 +76,8 @@ p.bigger-font {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    gap: clamp(20px, 1.25rem, 40px);
-    padding: clamp(40px, 2.5rem, 60px);
+    gap: 1.25rem;
+    padding: 2.5rem;
     padding-bottom: 60px;
   }
 
