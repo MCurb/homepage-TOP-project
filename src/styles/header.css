@@ -93,17 +93,20 @@ header {
   }
 
   header .social-links {
-    display: none;
+    justify-content: flex-end;
+    margin-top: 1rem;
   }
 
   .header-img-container {
+    float: left;
+
     width: 18.75rem;
     aspect-ratio: 1 / 1;
     
     margin-left: -3.75rem;
-    margin-top: -120px;
+    margin-top: -6.75rem;
     margin-right: 1.5rem;
-    float: left;
+    
     border-radius: 1rem;
     animation: enter-left 1s ease backwards;
   }
@@ -124,6 +127,7 @@ header {
     display: block;
     width: clamp(30ch, 75vw, 80ch);
     padding: 1.25rem;
+    padding-top: 3rem;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
@@ -142,7 +146,7 @@ header {
 @media (min-width: 64rem) {
   header .social-links {
     align-self: flex-end;
-    display: flex;
+    margin-top: 0;
   }
 
   .info-cont h1 {
@@ -153,6 +157,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 0;
+    padding: 1.25rem;
     width: clamp(42ch, 75vw, 130ch);
   }
 
@@ -165,9 +170,9 @@ header {
   .header-img-container {
     flex-shrink: 0;
     display: flex;
+
     margin-top: -3.75rem;
     margin-bottom: -3.75rem;
-    margin-left: -3.75rem;
   }
 
   .profile-name {
