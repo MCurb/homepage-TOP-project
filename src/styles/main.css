@@ -4,7 +4,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 20px 200px 20px;
+  padding: 6.25rem 1.25rem 12.5rem;
   gap: 1.5rem;
 }
 
@@ -14,7 +14,6 @@ main h2 {
 
 .project-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
   place-content: center;
   gap: 3.75rem;
   width: 100%;
