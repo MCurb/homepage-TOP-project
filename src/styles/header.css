@@ -10,6 +10,7 @@ header {
 
 .header-img-container {
   position: relative;
+  aspect-ratio: 2 / 3;
   max-width: 90vw;
   box-shadow:
     rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -46,7 +47,6 @@ header {
 .header-img-container img {
   height: 100%;
   width: 100%;
-  aspect-ratio: 2/3;
   object-fit: cover;
 }
 
@@ -98,11 +98,13 @@ header {
 
   .header-img-container {
     width: 18.75rem;
+    aspect-ratio: 1 / 1;
+    
     margin-left: -3.75rem;
     margin-top: -120px;
     margin-right: 1.5rem;
     float: left;
-    border-radius: 16px;
+    border-radius: 1rem;
     animation: enter-left 1s ease backwards;
   }
 
@@ -115,9 +117,7 @@ header {
   }
 
   .header-img-container img {
-    border-radius: 16px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
+    border-radius: 1rem;
   }
 
   .about-section {
@@ -165,7 +165,6 @@ header {
   .header-img-container {
     flex-shrink: 0;
     display: flex;
-    width: auto;
     margin-top: -3.75rem;
     margin-bottom: -3.75rem;
     margin-left: -3.75rem;
